@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_ecommerce/pages/card_page.dart';
 import 'package:minimal_ecommerce/pages/intero_page.dart';
 import 'package:minimal_ecommerce/pages/shopPage.dart';
 import 'package:minimal_ecommerce/thames/light_mode.dart';
@@ -22,8 +23,9 @@ class _MyAppState extends State<MyApp> {
       home: intro(),
       theme: lightMode,
       routes: {
-        '/intro_page' : (context) => const intro(),
-        '/shopPage' : (context) => const shop_Page(),
+        '/intro_page': (context) => const intro(),
+        '/shopPage': (context) => const shop_Page(),
+        '/cardPage': (context) => const cardPage(),
       },
     );
   }

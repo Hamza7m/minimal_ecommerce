@@ -30,29 +30,41 @@ class _my_DrawerState extends State<my_Drawer> {
             ),
             ListTile(
               leading: Icon(
-                Icons.shop,
+                Icons.shopping_bag,
                 color: Colors.grey,
               ),
               title: Text('shoping'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/shopPage');
+              },
             ),
             ListTile(
               leading: Icon(
-                Icons.card_membership,
+                Icons.shopping_cart,
                 color: Colors.grey,
               ),
               title: Text('card'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/cardPage');
+              },
             ),
           ]),
         ),
 
         Container(
+          margin: EdgeInsets.only(bottom: 10),
           child: ListTile(
-            leading: Icon(
-              Icons.exit_to_app,
-              color: Colors.grey,
-            ),
-            title: Text('Exit'),
-          ),
+              leading: Icon(
+                Icons.logout,
+                color: Colors.grey,
+              ),
+              title: Text('Exit'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/intro_page');
+              }),
         )
       ]),
     );

@@ -19,7 +19,8 @@ class _introState extends State<intro> {
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             //logo
             Icon(Icons.shopping_bag,
-                size: 80, color: Theme.of(context).colorScheme.inversePrimary),
+                size: 80, 
+                color: Theme.of(context).colorScheme.inversePrimary),
             SizedBox(
               height: 10,
             ),
